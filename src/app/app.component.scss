@@ -1,0 +1,18 @@
+@import './theme/sass/conf/_variables';
+
+/** HOW TO STYLE **/
+
+// Single Component. This styles .red-btn class of app-login component only
+/*/deep/ app-login .red-btn {
+    color: $button_ripple_white_text;
+    background: $button_ripple_red;
+}*/
+// All Components. This styles all .red-btn class of all the components
+/*:host /deep/ .red-btn {
+    color: $button_ripple_white_text;
+    background: $button_ripple_red;
+}*/
+
+:host /deep/ .app-navigation .mdl-navigation__link {
+    color : $navigation-link-color;
+}

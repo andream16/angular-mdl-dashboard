@@ -1,0 +1,38 @@
+app-graph {
+  width: 66.333%;
+}
+
+app-purple-card {
+  width: 100% !important;
+}
+
+app-green-card { 
+  width: 100%;
+}
+
+@media screen and (max-width: 840px) {
+  app-graph, app-purple-card, app-green-card {
+    width: 100%;
+  }
+  app-cards {
+    width: 100% !important;
+  }
+}
+
+.app-cards {
+  margin: 0 0 0 16px;
+}
+
+.app-charts {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 0;        
+}
+
+.middle-container {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}

@@ -1,0 +1,12 @@
+.app-updates .mdl-card__title {
+  min-height: 160px;
+  background-image: url('https://getmdl.io/templates/dashboard/images/dog.png');
+  background-position: 90% 100%;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 840px) {
+  .app-updates {
+    margin-left: 15%;
+    width: 70%;
+  }
+}

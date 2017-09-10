@@ -1,0 +1,12 @@
+mdl-card.app-options.mdl-color--deep-purple-500.mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-desktop(mdl-shadow='2')
+    mdl-card-supporting-text.mdl-color-text--blue-grey-50
+        mdl-card-title.title View options
+        mdl-list
+            mdl-list-item('*ngFor'='let option of options')
+                mdl-list-item-text-body
+                    mdl-checkbox('[mdl-ripple]'='true') {{ option.title }} 
+    mdl-card-actions.mdl-card--border
+        button.mdl-color-text--blue-grey-50(mdl-button, mdl-ripple, href='#') Change location
+        mdl-layout-spacer
+        button.location-btn(mdl-button, mdl-button-type='icon') Change location
+            mdl-icon location_on

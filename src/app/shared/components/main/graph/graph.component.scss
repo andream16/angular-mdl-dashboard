@@ -1,0 +1,32 @@
+.app-graphs {
+  width: 100%;
+  padding: 16px !important;
+  margin-top: 8px 0 0 0;
+  padding: 56px 32px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+/* TODO: Find a proper solution to have the graphs
+ * not float around outside their container in IE10/11.
+ * Using a browserhacks.com solution for now.
+ */
+_:-ms-input-placeholder, :root .app-graphs {
+  min-height: 664px;
+}
+_:-ms-input-placeholder, :root .app-graph {
+  max-height: 300px;
+}
+/* TODO end */
+.app-graph:nth-child(1) {
+  color: #00b9d8;
+}
+.app-graph:nth-child(2) {
+  color: #d9006e;
+}

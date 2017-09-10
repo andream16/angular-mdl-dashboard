@@ -1,0 +1,40 @@
+.app-content {
+  max-width: 1080px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 46px;
+  padding-right: 46px;
+}
+
+app-side-bar {
+  height: inherit;
+}
+
+.app-drawer {
+  border : 0;
+}
+
+mdl-layout-drawer.app-drawer.mdl-color--blue-grey-900.mdl-color-text--blue-grey-50 {
+  overflow-y: initial;
+}
+
+@media screen and (min-width: 1024px) {
+  mdl-layout-header.demo-header.mdl-color--grey-100.mdl-color-text--grey-600 {
+    margin-left: 240px;
+    width: calc(100% - 240px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  mdl-layout-header.demo-header.mdl-color--grey-100.mdl-color-text--grey-600 {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 884px) {
+  .demo-content {
+    height: 884px;
+  }
+}
+

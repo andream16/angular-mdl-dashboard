@@ -1,0 +1,21 @@
+header.app-drawer-header
+    img.app-avatar(src="https://getmdl.io/templates/dashboard/images/user.jpg")
+    div.app-avatar-dropdown
+        span hello@example.com
+        mdl-layout-spacer
+        button(mdl-button, '#arrowmenusidebarbtn'='mdlButton', (click)='sidebararrowmenu.toggle($event, arrowmenusidebarbtn)', mdl-button-type="icon", mdl-ripple)
+            mdl-icon arrow_drop_down
+            span.visuallyhidden Accounts
+        mdl-menu.menu-container('#sidebararrowmenu'='mdlMenu', mdl-menu-position='bottom-right') 
+            mdl-menu-item.menu-item('*ngFor'='let entry of profileDropdown', mdl-ripple)
+                i.mdl-color-text--blue-grey-200.material-icons.dropdown-img(role='presentation') {{ entry.image }}          
+                | {{ entry.title }}    
+nav.app-navigation.mdl-navigation.mdl-layout-spacer.mdl-color--blue-grey-800
+    div('*ngFor'='let navigationLink of navigationLinks, let last = last')
+        a.mdl-navigation__link('*ngIf'='!last', href='#')
+            i.mdl-color-text--blue-grey-200.material-icons(role='presentation') {{ navigationLink.image }}            
+            | {{ navigationLink.title }}
+    mdl-layout-spacer
+    a.mdl-navigation__link(href='#')
+        i.mdl-color-text--blue-grey-200.material-icons(role='presentation') {{ navigationLinks[navigationLinks.length - 1].image }}            
+        | {{ navigationLinks[navigationLinks.length - 1].title }}

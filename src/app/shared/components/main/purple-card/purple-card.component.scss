@@ -1,0 +1,86 @@
+@media screen and (max-width: 479px) {
+  .mdl-cell--3-col {
+    width: 100%;
+  }
+}
+
+.app-cards {
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+  margin-right: 0;
+  margin-left: 16px;             
+}
+.app-cards .app-separator {
+  height: 32px;
+}
+.app-cards .mdl-card__title.mdl-card__title {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+.app-cards ul {
+  padding: 0;
+}
+
+mdl-card-actions {
+  padding-top: 0;
+}
+
+.title {
+  padding-bottom: 0;
+  margin: 0;
+  font-size: 1em;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.app-cards .mdl-card__actions a {
+  color: #00BCD4;
+  text-decoration: none;
+}
+
+span.mdl-checkbox__box-outline {
+  border: 2px solid rgba(255,255,255,0.89) !important;
+}
+.app-options mdl-list {
+  margin: 0;
+  list-style-type: none;
+}
+.app-options mdl-list-item {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0px;
+  color: white;
+}
+mdl-card-supporting-text.mdl-color-text--blue-grey-50 {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.app-options .material-icons {
+  color: rgba(255, 255, 255, 0.89);
+}
+.app-options .mdl-card__actions {
+  height: 64px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.location-btn {
+  color: transparent;
+}
+
+@media screen and (max-width: 840px) {
+  .app-options {
+    margin-left: 15%;
+    width: 70%;
+  }
+}

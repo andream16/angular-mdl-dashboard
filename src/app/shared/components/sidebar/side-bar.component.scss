@@ -1,0 +1,83 @@
+@import '../../../theme/sass/conf/_variables';
+
+.app-drawer-header {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 16px;
+  height: 15%;
+}
+.app-avatar-dropdown {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.app-navigation {
+  height: 85%;
+  bottom: 0;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.app-navigation .mdl-navigation__link {
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: $navigation-link-color;
+  font-weight: 500;
+}
+.app-navigation .mdl-navigation__link:hover {
+  background-color: #00BCD4;
+}
+.app-navigation .mdl-navigation__link .material-icons {
+  font-size: 24px;
+  margin-right: 32px;
+}
+.app-avatar-dropdown {
+    z-index: 1;
+}
+.app-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+/* iOS Safari specific workaround */
+.app-drawer .menu-container {
+  z-index: -1;
+}
+.app-drawer .app-navigation {
+  z-index: -2;
+}
+/* END iOS Safari specific workaround */
+.app-drawer .menu-container .menu-item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dropdown-img{
+  vertical-align: middle
+}
