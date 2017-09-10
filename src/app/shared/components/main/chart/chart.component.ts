@@ -11,7 +11,7 @@ import { SvgModel } from './chart.model';
 
 export class ChartComponent {
 
-    private svgs: SvgModel[] = [
+    public svgs: SvgModel[] = [
         { amount : 82, percentage: '%' },
         { amount : 82, percentage: '%' },
         { amount : 82, percentage: '%' },

@@ -11,13 +11,13 @@ import { NavigationLinkModel } from './side-bar.models';
 
 export class SideBarComponent {
 
-  private profileDropdown: NavigationLinkModel[] = [
+  public profileDropdown: NavigationLinkModel[] = [
     { image : '', title : 'hello@example.com' },
     { image : '', title : 'info@example.com' },
     { image : 'add', title : 'Add another account ...' },
   ];
 
-  private navigationLinks: NavigationLinkModel[] = [
+  public navigationLinks: NavigationLinkModel[] = [
     { image : 'home', title : 'Home' },
     { image : 'inbox', title : 'Inbox' },
     { image : 'delete', title : 'Trash' },
