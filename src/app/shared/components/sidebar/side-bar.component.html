@@ -6,11 +6,23 @@
       <mdl-icon>arrow_drop_down</mdl-icon><span class="visuallyhidden">Accounts</span>
     </button>
     <mdl-menu class="menu-container" #sidebararrowmenu="mdlMenu" mdl-menu-position="bottom-right"> 
-      <mdl-menu-item class="menu-item" *ngFor="let entry of profileDropdown" mdl-ripple="mdl-ripple"><i class="mdl-color-text--blue-grey-200 material-icons dropdown-img" role="presentation">{{ entry.image }}          </i>{{ entry.title }}    </mdl-menu-item>
+      <mdl-menu-item class="menu-item" *ngFor="let entry of profileDropdown" mdl-ripple="mdl-ripple">
+        <i class="mdl-color-text--blue-grey-200 material-icons dropdown-img" role="presentation">{{ entry.image }}</i>
+        {{ entry.title }}    
+      </mdl-menu-item>
     </mdl-menu>
   </div>
 </header>
 <nav class="app-navigation mdl-navigation mdl-layout-spacer mdl-color--blue-grey-800">
-  <div *ngFor="let navigationLink of navigationLinks, let last = last"><a class="mdl-navigation__link" *ngIf="!last" href="#"><i class="mdl-color-text--blue-grey-200 material-icons" role="presentation">{{ navigationLink.image }}            </i>{{ navigationLink.title }}</a></div>
-  <mdl-layout-spacer></mdl-layout-spacer><a class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-200 material-icons" role="presentation">{{ navigationLinks[navigationLinks.length - 1].image }}            </i>{{ navigationLinks[navigationLinks.length - 1].title }}</a>
+  <div *ngFor="let navigationLink of navigationLinks, let last = last">
+    <a class="mdl-navigation__link" *ngIf="!last" href="#">
+      <i class="mdl-color-text--blue-grey-200 material-icons" role="presentation">{{ navigationLink.image }}</i>
+      {{ navigationLink.title }}
+    </a>
+  </div>
+  <mdl-layout-spacer></mdl-layout-spacer>
+  <a class="mdl-navigation__link" href="#">
+    <i class="mdl-color-text--blue-grey-200 material-icons" role="presentation">{{ navigationLinks[navigationLinks.length - 1].image }}</i>
+    {{ navigationLinks[navigationLinks.length - 1].title }}
+  </a>
 </nav>
