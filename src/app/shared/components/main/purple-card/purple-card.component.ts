@@ -11,7 +11,7 @@ import { PurpleCardOptionModel } from './purple-card-option.model';
 
 export class PurpleCardComponent {
 
-  private options: PurpleCardOptionModel[] = [
+  public options: PurpleCardOptionModel[] = [
     { title : 'Click per Object' },
     { title : 'Views per Object' },
     { title : 'Objects selected' },
