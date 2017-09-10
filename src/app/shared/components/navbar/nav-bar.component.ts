@@ -11,6 +11,8 @@ import { MoreButtonEntryModel } from './more-button-entry.model';
 
 export class NavBarComponent {
 
+  public text6;
+
   public moreBtnEntries: MoreButtonEntryModel[] = [
     { title : 'About' },
     { title : 'Contact' },
