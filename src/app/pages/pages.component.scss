@@ -11,7 +11,7 @@ app-side-bar {
 }
 
 .app-drawer {
-  border : 0;
+  border: 0;
 }
 
 mdl-layout-drawer.app-drawer.mdl-color--blue-grey-900.mdl-color-text--blue-grey-50 {
@@ -38,3 +38,12 @@ mdl-layout-drawer.app-drawer.mdl-color--blue-grey-900.mdl-color-text--blue-grey-
   }
 }
 
+#view-source {
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 0;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  z-index: 900;
+}
