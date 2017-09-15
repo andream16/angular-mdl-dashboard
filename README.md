@@ -16,3 +16,7 @@ Run `ng build`, then, run `node server.js`. The app will be served at `http://lo
 ## Contribution
 
 Feel free to contribute with more components or improving what I did.
+
+## Screenshot
+
+![1.png](https://image.ibb.co/dqZ2r5/Immagine.png)
